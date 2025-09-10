@@ -1,0 +1,5 @@
+SELECT LOWER(nazwa) FROM`wojewodztwa`;
+
+Select COUNT(nazwa) FROM `miasta` WHERE id_wojewodztwa = 1;
+
+SELECT wojewodztwa.nazwa, miasta.nazwa FROM `wojewodztwa` JOIN `miasta` WHERE wojewodztwo.id = miasta.id_wojewodztwa

@@ -1,0 +1,7 @@
+SELECT model FROM produkt;
+
+SELECT buty.model, buty.nazwa, buty.cena, produkt.nazwa_pliku FROM buty INNER JOIN produkt ON buty.model = produkt.model;
+
+
+SELECT buty.nazwa, buty.cena, produkt.kolor, produkt.kod_produktu, produkt.nazwa_pliku From buty 
+JOIN produkt ON produkt.model = buty.model WHERE produkt.model = 'P-59-03';
